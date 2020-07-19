@@ -44,24 +44,24 @@ std::string Measurement::toString() const
 	return measurementRep;
 }
 
-Instant Measurement::getMeasurmentTime() const
+const Instant Measurement::getMeasurmentTime() const
 {
 	return measurementTime;
 }
 
-Instant Measurement::getSampledTime() const
+const Instant Measurement::getSampledTime() const
 {
-	// Has to be done in seconds to ensure the uint32_t cast of the count does not cut of the seconds: 5:01 -> 10 if cut off 5:01 -> 5
-	return HelperFunctions::getSampledTimePoint<std::chrono::seconds>(getMeasurmentTime(), 300);
+	using minutes = std::chrono::duration<double, std::ratio<60>>;
+	return HelperFunctions::getSampledTimePoint<minutes>(getMeasurmentTime(), 5);
 }
 
 
-double Measurement::getMeasurementValue() const
+const double Measurement::getMeasurementValue() const
 {
 	return measurementValue;
 }
 
-MeasurementType Measurement::getMeasurementType() const
+const MeasurementType Measurement::getMeasurementType() const
 {
 	return measurementName;
 }

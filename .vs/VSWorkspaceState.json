@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\out"
+    "\\out\\build",
+    "\\out\\build\\x64-Debug (Standard)"
   ],
-  "SelectedNode": "\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

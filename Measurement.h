@@ -32,11 +32,11 @@ public:
 
 	std::string toString() const;
 	std::string toSampledMeasurementString() const;
-
-	Instant getMeasurmentTime() const;
-	double getMeasurementValue() const;
-	MeasurementType getMeasurementType() const;
-	Instant getSampledTime() const;
+	
+	const Instant getMeasurmentTime() const;
+	const double getMeasurementValue() const;
+	const MeasurementType getMeasurementType() const;
+	const Instant getSampledTime() const;
 
 private:
 	Instant measurementTime;
