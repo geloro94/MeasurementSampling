@@ -36,6 +36,7 @@ std::map<MeasurementType, std::vector<Measurement>> sample(Instant startOfSampli
 	std::map<MeasurementType, std::vector<Measurement>> sortedSampledMeasurements;
 
 	removeSamplesBefore(startOfSampling, unsampledMeasurements);
+
 	sortSamples(unsampledMeasurements);
 
 	for(auto& msrmt : unsampledMeasurements)
@@ -66,8 +67,8 @@ int main()
 	std::string regexString = R"(^\{((19|20)\d\d-(0[1-9]|1[012])-([012]\d|3[01])T([01]\d|2[0-3]):([0-5]\d):([0-5]\d)),\w*,(-?)(0|([1-9][0-9]*))(\.[0-9]+)?\}$)";
 	std::regex regularExpression{regexString.c_str()};
 	std::string measurementData = R"(
-	{2017-01-03T10:04:45, TEMP, 35.79}
-	{2017-01-03T10:04:45, TEMP, 35.79}
+	{2017-05-03T10:04:45, TEMP, 35.79}
+	{2017-05-03T10:04:45, TEMP, 35.79}
 	{2017-01-03T10:01:18, SPO2, 98.78}
 	{2017-01-03T10:09:07, TEMP, 35.01}
 	{2017-01-03T10:03:34, SPO2, 96.49}
@@ -82,7 +83,7 @@ int main()
 	while(std::getline(input, line))
 	{
 		line.erase(remove_if(line.begin(), line.end(), isspace), line.end());
-		if(std::regex_match(line, regularExpression))
+		if(std::regex_match(line, regularExpression)) //!line.empty()
 		{
 			auto msrmt = Measurement::createMeasurementFromString(line);
 			unsampledMeasurements.emplace_back(msrmt);
@@ -97,7 +98,7 @@ int main()
 	}
 
 
-	auto sampledMeasurements = sample(HelperFunctions::convertToTimePoint("2017-01-03T10:00:00", USED_TIME_FORMAT), unsampledMeasurements);
+	auto sampledMeasurements = sample(HelperFunctions::convertToTimePoint("", USED_TIME_FORMAT), unsampledMeasurements);
 
 	for (auto& value : sampledMeasurements)
 	{
