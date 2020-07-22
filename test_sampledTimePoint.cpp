@@ -13,15 +13,14 @@
 
 int main()
 {
-	setenv("TZ", "UTC", 1);
 	std::random_device rd;
 	std::mt19937 gen(rd());
-	std::uniform_int_distribution<unsigned long long> randomDoubleDistribution(0, 65*365*24*60*60);
+	std::uniform_int_distribution<unsigned long long> randomTimeDistribution(0, 65*365*24*60*60);
 
 	for (int i=0; i < 10000; i++)
 	{
 		std::chrono::system_clock::time_point randomTimepoint{};
-		std::chrono::duration<unsigned long long> secondsSinceEpoche{randomDoubleDistribution(gen)};
+		std::chrono::duration<unsigned long long> secondsSinceEpoche{ randomTimeDistribution(gen)};
 		randomTimepoint = randomTimepoint + secondsSinceEpoche;
 		using minutes = std::chrono::duration<double, std::ratio<60>>;
 		auto sampledTimepoint = HelperFunctions::getSampledTimePoint<minutes>(randomTimepoint, 5);
@@ -53,7 +52,7 @@ int main()
 		using minutes = std::chrono::duration<double, std::ratio<60>>;
 		if(HelperFunctions::getSampledTimePoint<minutes>(mulitple5Timepoint, 5) == mulitple5Timepoint)
 		{
-			std::cout << HelperFunctions::convertToTimeString(mulitple5Timepoint, "%Y-%m-%dT%H:%M:%S") << std::endl;
+			//std::cout << HelperFunctions::convertToTimeString(mulitple5Timepoint, "%Y-%m-%dT%H:%M:%S") << std::endl;
 			continue;
 		}
 		else

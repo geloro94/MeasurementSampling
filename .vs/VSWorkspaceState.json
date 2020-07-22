@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\out\\build",
-    "\\out\\build\\x64-Debug (Standard)"
+    "\\out",
+    "\\out\\build"
   ],
   "PreviewInSolutionExplorer": false
 }

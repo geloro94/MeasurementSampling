@@ -100,6 +100,13 @@ build CMakeFiles\MeasurementSampling.dir\HelperFunctions.cpp.obj: CXX_COMPILER__
   TARGET_COMPILE_PDB = CMakeFiles\MeasurementSampling.dir\
   TARGET_PDB = MeasurementSampling.pdb
 
+build CMakeFiles\MeasurementSampling.dir\MeasurementSampler.cpp.obj: CXX_COMPILER__MeasurementSampling_Debug ..\..\..\MeasurementSampler.cpp || cmake_object_order_depends_target_MeasurementSampling_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\MeasurementSampling.dir
+  OBJECT_FILE_DIR = CMakeFiles\MeasurementSampling.dir
+  TARGET_COMPILE_PDB = CMakeFiles\MeasurementSampling.dir\
+  TARGET_PDB = MeasurementSampling.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target MeasurementSampling
@@ -108,7 +115,7 @@ build CMakeFiles\MeasurementSampling.dir\HelperFunctions.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable MeasurementSampling.exe
 
-build MeasurementSampling.exe: CXX_EXECUTABLE_LINKER__MeasurementSampling_Debug CMakeFiles\MeasurementSampling.dir\main.cpp.obj CMakeFiles\MeasurementSampling.dir\Measurement.cpp.obj CMakeFiles\MeasurementSampling.dir\HelperFunctions.cpp.obj
+build MeasurementSampling.exe: CXX_EXECUTABLE_LINKER__MeasurementSampling_Debug CMakeFiles\MeasurementSampling.dir\main.cpp.obj CMakeFiles\MeasurementSampling.dir\Measurement.cpp.obj CMakeFiles\MeasurementSampling.dir\HelperFunctions.cpp.obj CMakeFiles\MeasurementSampling.dir\MeasurementSampler.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -167,6 +174,49 @@ build NightlyTest: phony CMakeFiles\NightlyTest
 # Utility command for NightlyCoverage
 
 build NightlyCoverage: phony CMakeFiles\NightlyCoverage
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_convertToTimePoint
+
+
+#############################################
+# Order-only phony target for test_convertToTimePoint
+
+build cmake_object_order_depends_target_test_convertToTimePoint_Debug: phony || CMakeFiles\test_convertToTimePoint.dir
+
+build CMakeFiles\test_convertToTimePoint.dir\test_convertToTimePoint.cpp.obj: CXX_COMPILER__test_convertToTimePoint_Debug ..\..\..\test_convertToTimePoint.cpp || cmake_object_order_depends_target_test_convertToTimePoint_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_convertToTimePoint.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_convertToTimePoint.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_convertToTimePoint.dir\
+  TARGET_PDB = test_convertToTimePoint.pdb
+
+build CMakeFiles\test_convertToTimePoint.dir\HelperFunctions.cpp.obj: CXX_COMPILER__test_convertToTimePoint_Debug ..\..\..\HelperFunctions.cpp || cmake_object_order_depends_target_test_convertToTimePoint_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_convertToTimePoint.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_convertToTimePoint.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_convertToTimePoint.dir\
+  TARGET_PDB = test_convertToTimePoint.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_convertToTimePoint
+
+
+#############################################
+# Link the executable test_convertToTimePoint.exe
+
+build test_convertToTimePoint.exe: CXX_EXECUTABLE_LINKER__test_convertToTimePoint_Debug CMakeFiles\test_convertToTimePoint.dir\test_convertToTimePoint.cpp.obj CMakeFiles\test_convertToTimePoint.dir\HelperFunctions.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test_convertToTimePoint.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\test_convertToTimePoint.dir\
+  TARGET_FILE = test_convertToTimePoint.exe
+  TARGET_IMPLIB = test_convertToTimePoint.lib
+  TARGET_PDB = test_convertToTimePoint.pdb
 
 
 #############################################
@@ -228,6 +278,49 @@ build test_roundToNextMultiple.exe: CXX_EXECUTABLE_LINKER__test_roundToNextMulti
 # Utility command for ExperimentalUpdate
 
 build ExperimentalUpdate: phony CMakeFiles\ExperimentalUpdate
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_inputFormat
+
+
+#############################################
+# Order-only phony target for test_inputFormat
+
+build cmake_object_order_depends_target_test_inputFormat_Debug: phony || CMakeFiles\test_inputFormat.dir
+
+build CMakeFiles\test_inputFormat.dir\test_inputFormat.cpp.obj: CXX_COMPILER__test_inputFormat_Debug ..\..\..\test_inputFormat.cpp || cmake_object_order_depends_target_test_inputFormat_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_inputFormat.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_inputFormat.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_inputFormat.dir\
+  TARGET_PDB = test_inputFormat.pdb
+
+build CMakeFiles\test_inputFormat.dir\HelperFunctions.cpp.obj: CXX_COMPILER__test_inputFormat_Debug ..\..\..\HelperFunctions.cpp || cmake_object_order_depends_target_test_inputFormat_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_inputFormat.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_inputFormat.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_inputFormat.dir\
+  TARGET_PDB = test_inputFormat.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_inputFormat
+
+
+#############################################
+# Link the executable test_inputFormat.exe
+
+build test_inputFormat.exe: CXX_EXECUTABLE_LINKER__test_inputFormat_Debug CMakeFiles\test_inputFormat.dir\test_inputFormat.cpp.obj CMakeFiles\test_inputFormat.dir\HelperFunctions.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test_inputFormat.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\test_inputFormat.dir\
+  TARGET_FILE = test_inputFormat.exe
+  TARGET_IMPLIB = test_inputFormat.lib
+  TARGET_PDB = test_inputFormat.pdb
 
 
 #############################################
@@ -294,6 +387,106 @@ build ContinuousCoverage: phony CMakeFiles\ContinuousCoverage
 # Utility command for ContinuousMemCheck
 
 build ContinuousMemCheck: phony CMakeFiles\ContinuousMemCheck
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_sampledTimePoint
+
+
+#############################################
+# Order-only phony target for test_sampledTimePoint
+
+build cmake_object_order_depends_target_test_sampledTimePoint_Debug: phony || CMakeFiles\test_sampledTimePoint.dir
+
+build CMakeFiles\test_sampledTimePoint.dir\test_sampledTimePoint.cpp.obj: CXX_COMPILER__test_sampledTimePoint_Debug ..\..\..\test_sampledTimePoint.cpp || cmake_object_order_depends_target_test_sampledTimePoint_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_sampledTimePoint.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_sampledTimePoint.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_sampledTimePoint.dir\
+  TARGET_PDB = test_sampledTimePoint.pdb
+
+build CMakeFiles\test_sampledTimePoint.dir\HelperFunctions.cpp.obj: CXX_COMPILER__test_sampledTimePoint_Debug ..\..\..\HelperFunctions.cpp || cmake_object_order_depends_target_test_sampledTimePoint_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_sampledTimePoint.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_sampledTimePoint.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_sampledTimePoint.dir\
+  TARGET_PDB = test_sampledTimePoint.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_sampledTimePoint
+
+
+#############################################
+# Link the executable test_sampledTimePoint.exe
+
+build test_sampledTimePoint.exe: CXX_EXECUTABLE_LINKER__test_sampledTimePoint_Debug CMakeFiles\test_sampledTimePoint.dir\test_sampledTimePoint.cpp.obj CMakeFiles\test_sampledTimePoint.dir\HelperFunctions.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test_sampledTimePoint.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\test_sampledTimePoint.dir\
+  TARGET_FILE = test_sampledTimePoint.exe
+  TARGET_IMPLIB = test_sampledTimePoint.lib
+  TARGET_PDB = test_sampledTimePoint.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_sample
+
+
+#############################################
+# Order-only phony target for test_sample
+
+build cmake_object_order_depends_target_test_sample_Debug: phony || CMakeFiles\test_sample.dir
+
+build CMakeFiles\test_sample.dir\test_sample.cpp.obj: CXX_COMPILER__test_sample_Debug ..\..\..\test_sample.cpp || cmake_object_order_depends_target_test_sample_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_sample.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_sample.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_sample.dir\
+  TARGET_PDB = test_sample.pdb
+
+build CMakeFiles\test_sample.dir\HelperFunctions.cpp.obj: CXX_COMPILER__test_sample_Debug ..\..\..\HelperFunctions.cpp || cmake_object_order_depends_target_test_sample_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_sample.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_sample.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_sample.dir\
+  TARGET_PDB = test_sample.pdb
+
+build CMakeFiles\test_sample.dir\Measurement.cpp.obj: CXX_COMPILER__test_sample_Debug ..\..\..\Measurement.cpp || cmake_object_order_depends_target_test_sample_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_sample.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_sample.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_sample.dir\
+  TARGET_PDB = test_sample.pdb
+
+build CMakeFiles\test_sample.dir\MeasurementSampler.cpp.obj: CXX_COMPILER__test_sample_Debug ..\..\..\MeasurementSampler.cpp || cmake_object_order_depends_target_test_sample_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\test_sample.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_sample.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test_sample.dir\
+  TARGET_PDB = test_sample.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_sample
+
+
+#############################################
+# Link the executable test_sample.exe
+
+build test_sample.exe: CXX_EXECUTABLE_LINKER__test_sample_Debug CMakeFiles\test_sample.dir\test_sample.cpp.obj CMakeFiles\test_sample.dir\HelperFunctions.cpp.obj CMakeFiles\test_sample.dir\Measurement.cpp.obj CMakeFiles\test_sample.dir\MeasurementSampler.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test_sample.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\test_sample.dir\
+  TARGET_FILE = test_sample.exe
+  TARGET_IMPLIB = test_sample.lib
+  TARGET_PDB = test_sample.pdb
 
 
 #############################################
@@ -559,7 +752,15 @@ build CMakeFiles\ContinuousMemCheck: CUSTOM_COMMAND
 
 build MeasurementSampling: phony MeasurementSampling.exe
 
+build test_convertToTimePoint: phony test_convertToTimePoint.exe
+
+build test_inputFormat: phony test_inputFormat.exe
+
 build test_roundToNextMultiple: phony test_roundToNextMultiple.exe
+
+build test_sample: phony test_sample.exe
+
+build test_sampledTimePoint: phony test_sampledTimePoint.exe
 
 # =============================================================================
 # Folder targets.
@@ -569,7 +770,7 @@ build test_roundToNextMultiple: phony test_roundToNextMultiple.exe
 #############################################
 # Folder: C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug
 
-build all: phony MeasurementSampling.exe test_roundToNextMultiple.exe
+build all: phony MeasurementSampling.exe test_convertToTimePoint.exe test_roundToNextMultiple.exe test_inputFormat.exe test_sampledTimePoint.exe test_sample.exe
 
 # =============================================================================
 # Built-in targets

@@ -13,10 +13,12 @@ C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/Con
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ContinuousConfigure.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/NightlyTest.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/NightlyCoverage.dir
+C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/test_convertToTimePoint.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/NightlyMemCheck.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ExperimentalStart.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/test_roundToNextMultiple.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ExperimentalUpdate.dir
+C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/test_inputFormat.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ExperimentalConfigure.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ExperimentalBuild.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ExperimentalTest.dir
@@ -28,6 +30,8 @@ C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/Con
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ContinuousUpdate.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ContinuousCoverage.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/ContinuousMemCheck.dir
+C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/test_sampledTimePoint.dir
+C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/test_sample.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/test.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

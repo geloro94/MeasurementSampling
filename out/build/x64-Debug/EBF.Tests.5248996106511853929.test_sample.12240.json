@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "test_sample",
+    "Command": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/test_sample.exe",
+    "Arguments": [],
+    "WorkingDirectory": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug",
+    "ProjectFile": "C:/Users/Lorenz/Documents/MeasurementSampling/CMakeLists.txt",
+    "LineNumber": 31,
+    "Environment": {},
+    "ExpectsFailure": false,
+    "PassRegularExpression": null,
+    "FailRegularExpression": null,
+    "TargetName": "test_sample.exe",
+    "TimeoutInMs": -1
+  }
+]

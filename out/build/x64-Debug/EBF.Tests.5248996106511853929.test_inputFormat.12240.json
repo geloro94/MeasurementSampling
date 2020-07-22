@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "test_inputFormat",
+    "Command": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/test_inputFormat.exe",
+    "Arguments": [],
+    "WorkingDirectory": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug",
+    "ProjectFile": "C:/Users/Lorenz/Documents/MeasurementSampling/CMakeLists.txt",
+    "LineNumber": 27,
+    "Environment": {},
+    "ExpectsFailure": false,
+    "PassRegularExpression": null,
+    "FailRegularExpression": null,
+    "TargetName": "test_inputFormat.exe",
+    "TimeoutInMs": -1
+  }
+]

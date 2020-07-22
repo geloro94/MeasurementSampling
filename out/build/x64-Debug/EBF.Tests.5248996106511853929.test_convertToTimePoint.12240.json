@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "test_convertToTimePoint",
+    "Command": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/test_convertToTimePoint.exe",
+    "Arguments": [],
+    "WorkingDirectory": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug",
+    "ProjectFile": "C:/Users/Lorenz/Documents/MeasurementSampling/CMakeLists.txt",
+    "LineNumber": 19,
+    "Environment": {},
+    "ExpectsFailure": false,
+    "PassRegularExpression": null,
+    "FailRegularExpression": null,
+    "TargetName": "test_convertToTimePoint.exe",
+    "TimeoutInMs": -1
+  }
+]

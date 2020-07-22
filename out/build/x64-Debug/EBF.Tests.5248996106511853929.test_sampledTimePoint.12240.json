@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "test_sampledTimePoint",
+    "Command": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug/test_sampledTimePoint.exe",
+    "Arguments": [],
+    "WorkingDirectory": "C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug",
+    "ProjectFile": "C:/Users/Lorenz/Documents/MeasurementSampling/CMakeLists.txt",
+    "LineNumber": 23,
+    "Environment": {},
+    "ExpectsFailure": false,
+    "PassRegularExpression": null,
+    "FailRegularExpression": null,
+    "TargetName": "test_sampledTimePoint.exe",
+    "TimeoutInMs": -1
+  }
+]
