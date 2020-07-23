@@ -28,7 +28,7 @@ std::map<MeasurementType, std::vector<Measurement>>  MeasurementSampler::sample(
 
 	sortChronological(unsampledMeasurements);
 
-	for (auto& msrmt : unsampledMeasurements)
+	for (auto msrmt : unsampledMeasurements)
 	{
 		if (sortedSampledMeasurements.find(msrmt.getMeasurementType()) == sortedSampledMeasurements.end())
 		{

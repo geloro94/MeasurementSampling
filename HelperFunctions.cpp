@@ -43,7 +43,7 @@ std::chrono::system_clock::time_point convertToTimePoint(std::string timepointSt
 
 std::string convertToTimeString(std::chrono::system_clock::time_point tp, std::string timeStringFormat)
 {
-	//UTC + 1 default value kills performance
+	//UTC + 1
     tp += std::chrono::hours(1);
 	auto timestamp = std::chrono::system_clock::to_time_t(tp);
     auto tm = *std::gmtime(&timestamp);

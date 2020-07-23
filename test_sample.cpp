@@ -7,7 +7,7 @@
 //The sampled measurement should have vectors of only the given key type of the sampled map.
 //All values should be after the starting time-point
 //All values should be sorted chronological
-//Only one value should
+//Only one value should be sampled per Interval
 
 int main()
 {

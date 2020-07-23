@@ -10,7 +10,6 @@ class MeasurementSampler
 {
 public:
 	std::map<MeasurementType, std::vector<Measurement>>  sample(Instant startOfSampling, std::vector<Measurement> unsampledMeasurements);
-private:
 	void removeSamplesBefore(Instant startOfSampling, std::vector<Measurement>& unfilteredMeasurements);
 	void sortChronological(std::vector<Measurement>& unsortedMeasurements);
 	
