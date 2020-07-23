@@ -2,6 +2,8 @@
 #include <iostream>
 #include "HelperFunctions.h"
 
+//The next multiple modulo the factor should equal 0 furthermore the difference between the roundedValue and the initialValue should be smaller than the factor.
+
 int main()
 {
 	std::random_device rd; 

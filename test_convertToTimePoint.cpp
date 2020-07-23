@@ -10,6 +10,10 @@
 #include <sstream>
 #include <random>
 #include "HelperFunctions.h"
+#include "Measurement.h"
+
+//Converting a random TimePoint to a string and back should equal the initial TimePoint
+
 
 int main()
 {
@@ -22,7 +26,7 @@ int main()
 		std::chrono::system_clock::time_point randomTimepoint{};
 		std::chrono::duration<unsigned long long> secondsSinceEpoche{ randomTimeDistribution(gen)};
 		randomTimepoint = randomTimepoint + secondsSinceEpoche;
-		auto convertedTimepointString = HelperFunctions::convertToTimePoint(HelperFunctions::convertToTimeString(randomTimepoint, "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%dT%H:%M:%S");
+		auto convertedTimepointString = HelperFunctions::convertToTimePoint(HelperFunctions::convertToTimeString(randomTimepoint, USED_TIME_FORMAT), USED_TIME_FORMAT);
 		{
 			if(randomTimepoint == convertedTimepointString)
 			{
@@ -30,7 +34,7 @@ int main()
 			}
 			else
 			{
-				std::cout << "Test failed:" << HelperFunctions::convertToTimeString(randomTimepoint, "%Y-%m-%dT%H:%M:%S") << " != " << HelperFunctions::convertToTimeString(HelperFunctions::convertToTimePoint(HelperFunctions::convertToTimeString(randomTimepoint, "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%dT%H:%M:%S");
+				std::cout << "Test failed:" << HelperFunctions::convertToTimeString(randomTimepoint, USED_TIME_FORMAT) << " != " << HelperFunctions::convertToTimeString(HelperFunctions::convertToTimePoint(HelperFunctions::convertToTimeString(randomTimepoint, "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%dT%H:%M:%S"), "%Y-%m-%dT%H:%M:%S");
 				return -1;
 			}
 		}

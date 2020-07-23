@@ -31,11 +31,15 @@ public:
 	Measurement& operator=(Measurement&&) = default;
 
 	std::string toString() const;
-	std::string toSampledMeasurementString() const;
+
+	//Creates a string representation using the sampledTimePoint
+	std::string toSampledString() const;
 	
 	const Instant getMeasurmentTime() const;
 	const double getMeasurementValue() const;
 	const MeasurementType getMeasurementType() const;
+
+	//Returns the closest Instant which is a multiple of 5 minutes to the measurementTime. If the measuremtentTime itself is a multiple of 5 the values are equal
 	const Instant getSampledTime() const;
 
 private:

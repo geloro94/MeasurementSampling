@@ -3,6 +3,8 @@
 #include <regex>
 #include "HelperFunctions.h"
 
+//Random created valid input data should match the the regular expression
+
 int main()
 {
 	std::random_device rd;

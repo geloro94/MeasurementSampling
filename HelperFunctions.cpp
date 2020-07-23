@@ -15,7 +15,6 @@
 
 namespace HelperFunctions{
 
-
 std::vector<std::string> split(const std::string& str, char delim)
 {
     std::stringstream ss{str};
@@ -27,7 +26,6 @@ std::vector<std::string> split(const std::string& str, char delim)
     return result;
 }
 
-// Refer to https://en.cppreference.com/w/cpp/io/manip/get_time for possible timepointStringFormats
 std::chrono::system_clock::time_point convertToTimePoint(std::string timepointString, std::string timeStringFormat)
 {
 	std::chrono::system_clock::time_point tp{};
@@ -45,7 +43,7 @@ std::chrono::system_clock::time_point convertToTimePoint(std::string timepointSt
 
 std::string convertToTimeString(std::chrono::system_clock::time_point tp, std::string timeStringFormat)
 {
-    //UCT+1
+	//UTC + 1 default value kills performance
     tp += std::chrono::hours(1);
 	auto timestamp = std::chrono::system_clock::to_time_t(tp);
     auto tm = *std::gmtime(&timestamp);

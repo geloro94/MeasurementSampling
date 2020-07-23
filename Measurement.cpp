@@ -26,7 +26,7 @@ Measurement Measurement::createMeasurementFromString(const std::string& measurem
 
 }
 
-std::string Measurement::toSampledMeasurementString() const
+std::string Measurement::toSampledString() const
 {
 	auto measurmentValueString = std::to_string(measurementValue);
 	measurmentValueString.erase(measurmentValueString.find_last_not_of('0') + 1, std::string::npos );

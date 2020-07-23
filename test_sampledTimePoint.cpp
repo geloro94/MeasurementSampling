@@ -10,6 +10,7 @@
 #include <chrono>
 
 #include "HelperFunctions.h"
+#include "Measurement.h"
 
 int main()
 {
@@ -33,13 +34,13 @@ int main()
 			}
 			else
 			{
-				std::cout << "Test Failed: " << HelperFunctions::convertToTimeString(sampledTimepoint, "%Y-%m-%dT%H:%M:%S") << "-" << HelperFunctions::convertToTimeString(randomTimepoint, "%Y-%m-%dT%H:%M:%S") << ">" << std::to_string(5) << std::endl;
+				std::cout << "Test Failed: " << HelperFunctions::convertToTimeString(sampledTimepoint, USED_TIME_FORMAT) << "-" << HelperFunctions::convertToTimeString(randomTimepoint, USED_TIME_FORMAT) << ">" << std::to_string(5) << std::endl;
 				return -1;
 			}
 		}
 		else
 		{
-			std::cout << "Test Failed: " << HelperFunctions::convertToTimeString(sampledTimepoint, "%Y-%m-%dT%H:%M:%S") << ": " << sampledMinutesCount << "modulo" << std::to_string(5) << "unequal 0." << std::endl;
+			std::cout << "Test Failed: " << HelperFunctions::convertToTimeString(sampledTimepoint, USED_TIME_FORMAT) << ": " << sampledMinutesCount << "modulo" << std::to_string(5) << "unequal 0." << std::endl;
 			return -1;
 		}
 	}
@@ -52,12 +53,12 @@ int main()
 		using minutes = std::chrono::duration<double, std::ratio<60>>;
 		if(HelperFunctions::getSampledTimePoint<minutes>(mulitple5Timepoint, 5) == mulitple5Timepoint)
 		{
-			//std::cout << HelperFunctions::convertToTimeString(mulitple5Timepoint, "%Y-%m-%dT%H:%M:%S") << std::endl;
+			//std::cout << HelperFunctions::convertToTimeString(mulitple5Timepoint, USED_TIME_FORMAT) << std::endl;
 			continue;
 		}
 		else
 		{
-			std::cout << "Test Failed: " << HelperFunctions::convertToTimeString(mulitple5Timepoint, "%Y-%m-%dT%H:%M:%S") << std::endl;
+			std::cout << "Test Failed: " << HelperFunctions::convertToTimeString(mulitple5Timepoint, USED_TIME_FORMAT) << std::endl;
 		}
 	}
 	std::cout << "Test passed" << std::endl;
