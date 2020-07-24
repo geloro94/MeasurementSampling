@@ -81,7 +81,7 @@ int main()
 					return -1;
 				}
 				lastsampledTimePoint = msrmt.getSampledTime();
-//				std::cout << msrmt.toSampledString() << std::endl;
+				//std::cout << msrmt.toSampledString() << std::endl;
 			}
 		}
 

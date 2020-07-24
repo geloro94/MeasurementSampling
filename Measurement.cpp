@@ -29,7 +29,10 @@ Measurement Measurement::createMeasurementFromString(const std::string& measurem
 std::string Measurement::toSampledString() const
 {
 	auto measurmentValueString = std::to_string(measurementValue);
-	measurmentValueString.erase(measurmentValueString.find_last_not_of('0') + 1, std::string::npos );
+	if(measurmentValueString.find('.')!=std::string::npos)
+	{
+		measurmentValueString.erase(measurmentValueString.find('.') + 3, std::string::npos );
+	}
 	std::string measurementRep = "{" + HelperFunctions::convertToTimeString(getSampledTime(), USED_TIME_FORMAT) + ", " + measurementName + ", " +
 			measurmentValueString + "}";
 	return measurementRep;
