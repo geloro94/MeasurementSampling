@@ -1,31 +1,26 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.21)
 
 project(MeasurementSampling)
 
 # specify the C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(MeasurementSampling main.cpp Measurement.cpp HelperFunctions.cpp "MeasurementSampler.cpp")
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
-include(CTest)
+# Quellcode-Dateien auflisten
+set(SOURCES
+    src/main.cpp
+    src/Measurement.cpp
+    src/HelperFunctions.cpp
+    src/MeasurementSampler.cpp
+)
 
-add_executable(test_roundToNextMultiple test_roundToNextMultiple.cpp HelperFunctions.cpp)
+# Executable erstellen
+add_executable(MeasurementSampling ${SOURCES})
 
-add_test(NAME test_roundToNextMultiple COMMAND test_roundToNextMultiple)
+# Enable testing
+enable_testing()
 
-add_executable(test_convertToTimePoint test_convertToTimePoint.cpp HelperFunctions.cpp)
-
-add_test(NAME test_convertToTimePoint COMMAND test_convertToTimePoint)
-
-add_executable(test_sampledTimePoint test_sampledTimePoint.cpp HelperFunctions.cpp)
-
-add_test(NAME test_sampledTimePoint COMMAND test_sampledTimePoint)
-
-add_executable(test_inputFormat test_inputFormat.cpp HelperFunctions.cpp)
-
-add_test(NAME test_inputFormat COMMAND test_inputFormat)
-
-add_executable(test_sample test_sample.cpp HelperFunctions.cpp Measurement.cpp "MeasurementSampler.cpp")
-
-add_test(NAME test_sample COMMAND test_sample)
+# Add the test directory
+add_subdirectory(test)

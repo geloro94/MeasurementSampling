@@ -1,3 +1,0 @@
-C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug (Standard)/CMakeFiles/MeasurementSampling.dir
-C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug (Standard)/CMakeFiles/edit_cache.dir
-C:/Users/Lorenz/Documents/MeasurementSampling/out/build/x64-Debug (Standard)/CMakeFiles/rebuild_cache.dir
